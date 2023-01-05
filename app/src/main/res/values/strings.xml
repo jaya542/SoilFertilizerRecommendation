@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="selected_item">Selected State:</string>
+    <string name="selected_plat">Selected Auction Platform Name:</string>
+    <string name="selected_season">Selected Season:</string>
+    <string name="selected_spacing">Selected Spacing:</string>
+    <string name="selected_fym">Selected FYM:</string>
+    <string name="selected_yield">Selected Yield Target:</string>
+
+</resources>

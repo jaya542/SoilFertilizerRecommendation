@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seagreen">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/headerbg">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icarlogo">
+        </ImageView>
+
+        <TextView
+            android:layout_width="303dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text=" ICAR-Central Tobacco Research Institute Rajahmundry, AP-533105"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ctrilogo"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ctrilogo">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/trans"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="330dp"
+            android:background="@drawable/translate"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/soil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Soil test based fertiliser recommendation system for a targeted yield in FCV Tobacco."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/nls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Northern Light Soils"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nls"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Andhra Pradesh"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/state"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:text="Start" >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@+id/confirm"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/seagreen"
+            android:drawableTop="@drawable/contact"
+            android:text="\nContact Us"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-black"
+        android:text=" ©2022 ICAR, All rights reserved to CTRI"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp">
+
+    </TextView>
+
+
+
+</RelativeLayout>

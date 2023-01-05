@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/seagreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@drawable/headerbg">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icarlogo">
+            </ImageView>
+
+            <TextView
+                android:layout_width="303dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="ఐ.సి.ఎ.ఆర్ - కేంద్ర టొబాకో పరిశోధనా సంస్థ రాజమండ్రి, AP-533105"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ctrilogo"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ctrilogo">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/circle">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="రైతు వివరాలు"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="5dp">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:background="@drawable/circlewhite">
+            </TextView>
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/home"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="రైతు పేరు:"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/farmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="రైతు పేరు నమోదు చేయండి" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="సర్వే సంఖ్య/\nటి.జి.బి.ఆర్ సంఖ్య:"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/survey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="సంఖ్య/టి.జి.బి.ఆర్ సంఖ్య నమోదు చేయండి" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="గ్రామం పేరు:"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="గ్రామం పేరును నమోదు చేయండి" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="వేలం వేదిక:"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/auction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/copy"
+        android:orientation="horizontal"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/seagreen"
+            android:drawableTop="@drawable/back"
+            android:text="\nవెనుకకు"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:background="@color/seagreen"
+            android:drawableTop="@drawable/next"
+            android:text="\nముందుకు"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copy"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-black"
+        android:text=" ©2022 ICAR, All rights reserved to CTRI"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp">
+
+    </TextView>
+
+</RelativeLayout>

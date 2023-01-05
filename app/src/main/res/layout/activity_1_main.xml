@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebg">
+
+    <LinearLayout
+        android:id="@+id/logos"
+        android:layout_width="323dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="146dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icarlogo">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+
+            android:src="@drawable/ctrilogo">
+
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/icar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logos"
+        android:layout_centerHorizontal="true"
+        android:text="ICAR    -    CTRI"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Choose your language"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lang"
+        android:id="@+id/langs"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="English"/>
+
+        <Button
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500"
+            android:text="Telugu"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:text="©2022 ICAR, All rights reserved to CTRI"
+        android:textColor="@color/black"
+        android:textSize="16dp">
+
+    </TextView>
+</RelativeLayout>
